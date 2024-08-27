@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#C#",
+    "###"
+  ],
+  "key": {
+    "C": {
+      "tag": "c:wooden_chests"
+    },
+    "#": {
+      "item": "mythicmetals:palladium_ingot"
+    }
+  },
+  "result": {
+    "id": "mythicmetals_decorations:palladium_chest",
+    "count": 1
+  },
+  "group": "mm_chests"
+}
