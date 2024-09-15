@@ -275,8 +275,8 @@ public class MythicDecorationSet {
          * @param material The Armor Material used for the set
          * @see Builder
          */
-        public Builder createRegalSet(ArmorMaterial material) {
-            this.regalSet = new RegalSet(material);
+        public Builder createRegalSet(ArmorMaterial material, int duraMod) {
+            this.regalSet = new RegalSet(material, duraMod);
             return this;
         }
 
@@ -287,11 +287,11 @@ public class MythicDecorationSet {
          * @param fireproof Whether the crown is fireproof
          * @see Builder
          */
-        public Builder createCrown(RegistryEntry<ArmorMaterial> material, boolean fireproof) {
+        public Builder createCrown(RegistryEntry<ArmorMaterial> material, int maxDamage, boolean fireproof) {
             if (fireproof) {
-                this.crown = new ArmorItem(material, ArmorItem.Type.HELMET, new Item.Settings().group(MythicMetalsDecorations.MYTHICMETALS_DECOR).tab(2).fireproof());
+                this.crown = new ArmorItem(material, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(maxDamage).group(MythicMetalsDecorations.MYTHICMETALS_DECOR).tab(2).fireproof());
             } else {
-                this.crown = new ArmorItem(material, ArmorItem.Type.HELMET, new Item.Settings().group(MythicMetalsDecorations.MYTHICMETALS_DECOR).tab(2));
+                this.crown = new ArmorItem(material, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(maxDamage).group(MythicMetalsDecorations.MYTHICMETALS_DECOR).tab(2));
             }
             return this;
         }
