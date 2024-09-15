@@ -36,7 +36,9 @@ public class MythicMetalsDecorations implements ModInitializer {
                 group.addButton(ItemGroupButton.curseforge(group, "https://www.curseforge.com/minecraft/mc-mods/mythicmetals-decorations"));
                 group.addButton(ItemGroupButton.modrinth(group, "https://modrinth.com/mod/mythicmetals_decorations"));
                 group.addButton(ItemGroupButton.discord(group, "https://discord.gg/69cKvQWScC"));
-            }).build();
+            })
+        .disableDynamicTitle()
+        .build();
 
     public static final ScreenHandlerType<MythicChestScreenHandler> MYTHIC_CHEST_SCREEN_HANDLER_TYPE = new ExtendedScreenHandlerType<>(MythicChestScreenHandler::new, CodecUtils.toPacketCodec(Endec.INT));
 
