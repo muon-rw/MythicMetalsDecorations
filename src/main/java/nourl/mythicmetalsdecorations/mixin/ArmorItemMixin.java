@@ -30,7 +30,7 @@ public class ArmorItemMixin {
         }
         if (entry.value().equals(MythicDecorationsCrownMaterials.CELESTIUM)) {
             mythicmetalsdecorations$armorMapBuilder(builder, RegHelper.id("celestium_crown_speed_bonus"), EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL, slot);
-            mythicmetalsdecorations$armorMapBuilder(builder, RegHelper.id("celestium_crown_attack_bonus"), EntityAttributes.GENERIC_ATTACK_DAMAGE, 1.0F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_TOTAL, slot);
+            mythicmetalsdecorations$armorMapBuilder(builder, RegHelper.id("celestium_crown_attack_bonus"), EntityAttributes.GENERIC_ATTACK_DAMAGE, 1.0F, EntityAttributeModifier.Operation.ADD_VALUE, slot);
         }
         if (entry.value().equals(MythicDecorationsCrownMaterials.STAR_PLATINUM)) {
             mythicmetalsdecorations$armorMapBuilder(builder, RegHelper.id("star_platinum_crown_speed_bonus"), EntityAttributes.GENERIC_ATTACK_DAMAGE, 1.0F, EntityAttributeModifier.Operation.ADD_VALUE, slot);
