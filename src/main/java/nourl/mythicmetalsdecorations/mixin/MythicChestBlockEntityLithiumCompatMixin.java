@@ -1,6 +1,6 @@
 package nourl.mythicmetalsdecorations.mixin;
 
-import me.jellysquid.mods.lithium.api.inventory.LithiumInventory;
+import net.caffeinemc.mods.lithium.api.inventory.LithiumInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.collection.DefaultedList;
 import nourl.mythicmetalsdecorations.blocks.chest.MythicChestBlock;
