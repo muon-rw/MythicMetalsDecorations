@@ -11,7 +11,8 @@ import org.spongepowered.asm.mixin.Shadow;
 @Mixin(MythicChestBlockEntity.class)
 public abstract class MythicChestBlockEntityLithiumCompatMixin implements LithiumInventory {
 
-    @Shadow private DefaultedList<ItemStack> inventory;
+    @Shadow(remap = false)
+    private DefaultedList<ItemStack> inventory;
 
     @Override
     public int size() {
